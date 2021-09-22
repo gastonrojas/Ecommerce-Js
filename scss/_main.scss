@@ -1,0 +1,139 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  .main__hero {
+    grid-area: hero;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .hero__title {
+      color: rgb(51, 104, 38);
+      text-align: center;
+      margin: 20px;
+    }
+    .hero__image {
+      width: 100%;
+      margin: 15px;
+    }
+  }
+  .main__orders {
+    grid-area: orders;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 20px 10px;
+    h3 {
+      color: rgb(51, 104, 38);
+      margin: 15px;
+    }
+    p {
+      color: rgb(51, 104, 38);
+      margin: 5px;
+    }
+    .orders__image {
+      width: 100%;
+    }
+  }
+  .main__info {
+    grid-area: promo;
+    text-align: center;
+    h3 {
+      color: rgb(51, 104, 38);
+    }
+    p {
+      color: rgb(51, 104, 38);
+    }
+  }
+  .main__discount {
+    text-align: center;
+    margin: 15px;
+    grid-area: info;
+  }
+}
+// Seccion de productos
+#products {
+  color: rgb(51, 104, 38);
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  align-items: center;
+  .productos {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    max-height: 200vh;
+    .producto {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: space-between;
+      width: 130px;
+      margin: 10px;
+      border: 1px solid #ccc;
+      box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+      img {
+        max-width: 100%;
+      }
+      .text {
+        font-size: small;
+        padding: 0 20px 20px;
+        button {
+          background: gray;
+          border: 0;
+          color: white;
+          padding: 10px;
+          width: 100%;
+          &:hover {
+            background: green;
+            border: 0;
+            color: white;
+            padding: 10px;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+// seccion de cursos
+.courses {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  h3 {
+    margin: 10px;
+  }
+  p {
+    margin: 10px;
+  }
+}
+.loger {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  text-align: center;
+  margin: 100px 10px 200px 10px;
+}
+.about {
+  height: 300px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+@media screen and(min-width: 768px ) {
+  .main {
+    font-weight: 800;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 150px 4fr 3fr;
+    grid-template-areas:
+      ". hero ."
+      ". hero info"
+      ". orders promo";
+  }
+}

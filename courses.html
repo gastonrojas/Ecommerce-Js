@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Cursos</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__main">
+            <a href="index.html">
+                <img class="main__logo" src="./assets/images/logo.png" alt="Monsieur Gaston - Natural y Organico">
+            </a>
+            <h2 class="main__title">Cursos</h2>
+        </div>
+        <nav class="header__nav">
+            <ul>
+                <li>
+                    <a class="nav__item" href="./index.html">Home</a>
+                </li>
+                <li>
+                    <a class="nav__item" href="./products.html">Productos</a>
+                </li>
+                <li  class="nav__item--noDisplay">
+                    <a class="nav__item" href="./courses.html">Cursos</a>
+                </li>
+                <li>
+                    <a class="nav__item" href="./">Quienes somos</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__access">
+            <form action="#">
+                <input class="access__searchbar" type="search" placeholder="Buscar...">
+            </form>
+            <a href="./login.html"><button class="access__button--login">Login</button></a> 
+            <a href="./login.html"><button class="access__button--register">Registrarse</button></a>
+        </div>
+    </header>
+    <main class="courses">
+        <h3>Proximamente...</h2>
+
+        <p>Ayudanos a saber que cursos sobre alimentacion saludable les gustaria realizar</p>
+
+        <form action="">
+            <label for="nombre" >Nombre</label>
+            <input type="text"name="nombre" placeholder="Ej: Juan">
+            <br>
+            <label for="apellido">Apellido</label>
+            <input type="text"name="apellido"placeholder="Perez">
+            <br>
+            <label for="e-mail">E-mail</label>
+            <input type="email"name="e-mail"placeholder="ejemplo@email.com">
+            <br>
+            <label for="estadocivil">Estado civil</label>
+            <select name="estadocivil">
+                <option value="Soltero">Soltero/a</option>
+                <option value="Casado">Casado/a</option>
+                <option value="viudo">Viudo/a</option>
+            </select>
+            <br>
+            <label for="novedades">Deseo recibir novedades y descuentos</label>
+            <input type="checkbox"name="novedades" value="enviar">
+            <br>
+            <p>Escriba aqui su comentario</p>
+            <textarea cols="30" rows="10"></textarea>
+            <br>
+            <input type="submit" value="Enviar comentario">
+            <input type="reset" value="Limpiar formulario">
+            </form>
+            
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <h3>Cantactenos</h3>
+            <p>+5491169522577</p>
+            <p>grojas89@hotmail.com</p>
+            <p>Palermo, CABA</p>
+        </div>
+            
+        <div class="container">
+            <h3>Envios</h3>
+            <p>Envios a CABA y GBA<br>Gratis en pedidos mayores a $2000.-<br> Consulte por envios al interior</p>
+        </div>
+            
+        <div class="container">
+            <h3>Redes Sociales</h3>
+            <span><a href="https://www.instagram.com/monsieur.gaston"><img src="./assets/images/instagram-icon.png"></a></span>
+            <span><a href="https://web.facebook.com/monsieurgastonnaturalyorganico"><img src="./assets/images/facebook-icon.png"></a></span>
+        </div>
+    </footer>
+</body>
+</html>
