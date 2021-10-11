@@ -1,5 +1,5 @@
 {
-  "name": "new-folder",
+  "name": "clear",
   "version": "1.0.0",
   "description": "SASSII",
   "main": "index.js",
@@ -13,5 +13,14 @@
   "devDependencies": {
     "node-sass": "^6.0.1",
     "nodemon": "^2.0.12"
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gastonrojas/monsieur-gaston.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gastonrojas/monsieur-gaston/issues"
+  },
+  "homepage": "https://github.com/gastonrojas/monsieur-gaston#readme"
 }

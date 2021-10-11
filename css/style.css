@@ -1,3 +1,51 @@
+.olivach-producto {
+  background-image: url("../assets/images/olivach.jpg");
+  width: 100%;
+  height: 30vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.olivagr-producto {
+  background-image: url("../assets/images/olivagr.jpg");
+  width: 100%;
+  height: 30vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.panqueque-producto {
+  background-image: url("../assets/images/panqueque.jpg");
+  width: 100%;
+  height: 30vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.pasta-producto {
+  background-image: url("../assets/images/pasta.jpg");
+  width: 100%;
+  height: 30vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.pate-producto {
+  background-image: url("../assets/images/pate.jpg");
+  width: 100%;
+  height: 30vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.aceituna-producto {
+  background-image: url("../assets/images/aceituna.jpg");
+  width: 100%;
+  height: 30vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
+
 html {
   font-size: 16px; }
 
@@ -6,85 +54,137 @@ html {
   padding: 0px; }
 
 body {
-  font-family: sans-serif;
-  background-color: beige; }
+  font-family: 'Raleway', sans-serif;
+  background-color: #DBE8D8; }
+
+.olivach-producto {
+  background-image: url("../assets/images/olivach.jpg");
+  width: 100%;
+  height: 30vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.olivagr-producto {
+  background-image: url("../assets/images/olivagr.jpg");
+  width: 100%;
+  height: 30vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.panqueque-producto {
+  background-image: url("../assets/images/panqueque.jpg");
+  width: 100%;
+  height: 30vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.pasta-producto {
+  background-image: url("../assets/images/pasta.jpg");
+  width: 100%;
+  height: 30vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.pate-producto {
+  background-image: url("../assets/images/pate.jpg");
+  width: 100%;
+  height: 30vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.aceituna-producto {
+  background-image: url("../assets/images/aceituna.jpg");
+  width: 100%;
+  height: 30vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
 
 .main {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin: 20px; }
+  align-items: center; }
   .main .main__hero {
     grid-area: hero;
     display: flex;
     align-items: center;
     flex-direction: column; }
     .main .main__hero .hero__title {
-      color: #336826;
+      color: #0A7029;
       text-align: center;
-      margin: 20px; }
+      font-size: 1.5em; }
     .main .main__hero .hero__image {
-      width: 100%;
-      margin: 15px; }
+      width: 100%; }
   .main .main__orders {
     grid-area: orders;
     display: flex;
     flex-direction: column;
     text-align: center;
-    align-items: center;
-    margin: 20px 10px; }
+    align-items: center; }
     .main .main__orders h3 {
-      color: #336826;
-      margin: 15px; }
+      font-size: 1.3em;
+      color: #0A7029; }
     .main .main__orders p {
-      color: #336826;
-      margin: 5px; }
+      color: #0A7029;
+      font-size: 0.9em; }
     .main .main__orders .orders__image {
       width: 100%; }
   .main .main__info {
     grid-area: promo;
     text-align: center; }
     .main .main__info h3 {
-      color: #336826; }
+      font-size: 1em;
+      color: #0A7029; }
     .main .main__info p {
-      color: #336826; }
+      font-size: 0.7em;
+      color: #0A7029; }
   .main .main__discount {
+    color: #0A7029;
     text-align: center;
-    margin: 15px;
     grid-area: info; }
 
-#products {
-  color: #336826;
+.products {
+  margin: 20px 0px;
+  color: #0A7029;
   display: flex;
   flex-flow: column;
   text-align: center;
   align-items: center; }
-  #products .productos {
+  .products .productos {
     display: flex;
     flex-flow: row wrap;
-    align-content: flex-start;
+    align-content: center;
     max-height: 200vh; }
-    #products .productos .producto {
+    .products .productos .producto {
       display: flex;
       flex-flow: column wrap;
       justify-content: space-between;
-      width: 130px;
+      flex-basis: 40%;
       margin: 10px;
+      background-color: #0A7029;
       border: 1px solid #ccc;
       box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3); }
-      #products .productos .producto img {
+      .products .productos .producto img {
         max-width: 100%; }
-      #products .productos .producto .text {
-        font-size: small;
+      .products .productos .producto .text {
+        font-size: 0.9em;
+        color: #C8DF52;
         padding: 0 20px 20px; }
-        #products .productos .producto .text button {
-          background: gray;
+        .products .productos .producto .text h3 {
+          font-size: 1em; }
+        .products .productos .producto .text button {
+          background: #DBE8D8;
           border: 0;
-          color: white;
+          color: #0A7029;
           padding: 10px;
           width: 100%; }
-          #products .productos .producto .text button:hover {
-            background: green;
+          .products .productos .producto .text button:hover {
+            background: #FEDE00;
             border: 0;
             color: white;
             padding: 10px;
@@ -100,103 +200,252 @@ body {
     margin: 10px; }
 
 .loger {
+  color: #0A7029;
+  font-size: 1em;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
   text-align: center;
-  margin: 100px 10px 200px 10px; }
+  margin: 30px 10px 80px 10px; }
+  .loger h2 {
+    font-size: 1.2em; }
 
 .about {
-  height: 300px;
+  margin: 20px;
   display: flex;
   flex-flow: column wrap;
   justify-content: space-around;
   align-items: center;
-  text-align: center; }
+  text-align: center;
+  font-size: 1em; }
+  .about h2 {
+    font-size: 3em; }
+
+.error {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(#0A7029, #C8DF52); }
+  .error h1 {
+    font-size: 4em;
+    color: #FEDE00; }
+  .error h2 {
+    font-size: 1em;
+    color: #DBE8D8; }
+  .error a {
+    color: #FEDE00; }
 
 @media screen and (min-width: 768px) {
   .main {
+    margin: 0px 8px 60px 0px;
     font-weight: 800;
     display: grid;
     gap: 10px;
     grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 150px 4fr 3fr;
-    grid-template-areas: ". hero ." ". hero info" ". orders promo"; } }
+    grid-template-rows: 15px 4fr 3fr;
+    grid-template-areas: ". hero ." ". hero info" ". orders promo"; }
+  .producto {
+    max-width: 170px; } }
+
+@media screen and (min-width: 1024px) {
+  .producto {
+    max-width: 300px; } }
+
+.olivach-producto {
+  background-image: url("../assets/images/olivach.jpg");
+  width: 100%;
+  height: 30vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.olivagr-producto {
+  background-image: url("../assets/images/olivagr.jpg");
+  width: 100%;
+  height: 30vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.panqueque-producto {
+  background-image: url("../assets/images/panqueque.jpg");
+  width: 100%;
+  height: 30vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.pasta-producto {
+  background-image: url("../assets/images/pasta.jpg");
+  width: 100%;
+  height: 30vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.pate-producto {
+  background-image: url("../assets/images/pate.jpg");
+  width: 100%;
+  height: 30vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.aceituna-producto {
+  background-image: url("../assets/images/aceituna.jpg");
+  width: 100%;
+  height: 30vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
 
 .header {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-  background-image: linear-gradient(#7fff00, #31580a); }
+  background-color: #0A7029; }
   .header .header__main {
     display: flex;
     justify-content: center;
     align-items: center; }
     .header .header__main .main__logo {
       width: 84px;
-      margin: 0px 5px; }
+      padding: 0px 10px; }
     .header .header__main .main__title {
-      font-size: 1.2em;
-      color: #f5f829;
+      font-size: 1.4em;
+      color: #FEDE00;
       margin-right: 5px; }
   .header .header__nav {
     list-style: none;
     text-align: center; }
-    .header .header__nav li {
-      display: inline-block; }
-      .header .header__nav li .nav__item {
-        text-decoration: none;
-        text-align: center;
-        margin: 2px;
-        color: #d8d8d8;
-        font-size: 1em; }
-        .header .header__nav li .nav__item:hover {
-          color: #f5f829; }
-    .header .header__nav .nav__item--noDisplay {
-      display: none; }
+    .header .header__nav ul {
+      align-self: center; }
+      .header .header__nav ul li {
+        display: inline-block; }
+        .header .header__nav ul li .nav__item {
+          text-decoration: none;
+          text-align: center;
+          margin: 0px 2px;
+          color: #DBE8D8;
+          font-size: 0.8em; }
+          .header .header__nav ul li .nav__item:hover {
+            color: #FEDE00; }
   .header .header__access {
-    width: 70%;
     display: flex;
-    margin: 10px 0px;
-    justify-content: space-around; }
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px; }
     .header .header__access .access__searchbar {
-      width: 80px;
-      height: 20px;
+      font-size: 0.8em;
       border: 1px solid black;
-      border-radius: 3px; }
+      border-radius: 3.5px; }
     .header .header__access .access__button--login {
-      width: 50px;
-      height: 20px;
-      color: #336826;
-      background-color: #f5f829;
-      border: 2px solid #f5f829;
-      border-radius: 3px; }
+      font-size: 0.8em;
+      margin: 0px 3px;
+      color: #0A7029;
+      background-color: #FEDE00;
+      border: 2px solid #FEDE00;
+      border-radius: 3.5px; }
     .header .header__access .access__button--register {
-      height: 20px;
+      font-size: 0.8em;
       background-color: transparent;
-      color: #d8d8d8;
-      border: 1px solid #d8d8d8;
-      border-radius: 3px; }
+      margin: 0px 3px;
+      color: #DBE8D8;
+      border: 1px solid #DBE8D8;
+      border-radius: 3.5px; }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 420px) {
   .header {
     justify-content: space-around;
     flex-flow: row wrap; }
     .header .header__main .main__title {
-      font-size: 1.4em; }
+      font-size: 1.6em; }
+    .header .header__nav {
+      font-size: 1.2em;
+      margin: 0px 50px 0px 0px; } }
+
+@media screen and (min-width: 700px) {
+  .header {
+    height: 63px;
+    position: relative;
+    justify-content: flex-start;
+    flex-flow: row wrap; }
+    .header .header__main {
+      display: flex;
+      justify-content: flex-start;
+      width: 250px; }
+      .header .header__main .main__title {
+        font-size: 1.3em; }
+    .header .header__nav {
+      font-size: 1em; }
     .header .header__access {
-      width: 200px; } }
+      position: absolute;
+      right: 5px; } }
+
+.olivach-producto {
+  background-image: url("../assets/images/olivach.jpg");
+  width: 100%;
+  height: 30vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.olivagr-producto {
+  background-image: url("../assets/images/olivagr.jpg");
+  width: 100%;
+  height: 30vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.panqueque-producto {
+  background-image: url("../assets/images/panqueque.jpg");
+  width: 100%;
+  height: 30vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.pasta-producto {
+  background-image: url("../assets/images/pasta.jpg");
+  width: 100%;
+  height: 30vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.pate-producto {
+  background-image: url("../assets/images/pate.jpg");
+  width: 100%;
+  height: 30vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.aceituna-producto {
+  background-image: url("../assets/images/aceituna.jpg");
+  width: 100%;
+  height: 30vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
 
 .footer {
-  background-image: linear-gradient(#31580a, #7fff00);
-  color: yellow;
+  background-color: #0A7029;
+  color: #C8DF52;
   display: flex;
   flex-direction: column;
-  margin: 50px 0px;
+  margin: 50px 0px 0px 0px;
   justify-content: space-around;
   text-align: center; }
   .footer .container {
     margin: 15px; }
+  .footer h3 {
+    color: #FEDE00; }
 
 @media screen and (min-width: 768px) {
   .footer {

@@ -1,3 +1,5 @@
+@import "variables.scss";
+
 html {
   font-size: 16px;
 }
@@ -8,6 +10,6 @@ html {
 }
 
 body {
-  font-family: sans-serif;
-  background-color: beige;
+  font-family: 'Raleway', sans-serif;
+  background-color: $menta;
 }
