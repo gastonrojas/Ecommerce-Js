@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Productos aliemnticios naturales y organicos de primera calidad elaborados en mendoza y en buenos aires">"
-    <meta name="keywords" content="natural, organico, aceite, oliva, aceitunas, girasol, panqueques">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Monsieur Gaston, una empresa de alimentos naturales y organicos de buenos aires que cuenta con productos organicos producidos localmente y productos naturales de Mendoza">
+    <meta name="keywords" content="Monsieur, gaston, alimentos, natural, organico, descuentos, oliva, aceitunas">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Nuestros Productos</title>
+    <title>Monsieur Gaston - Natural y Organico</title>
 </head>
 <body>
     <header class="header">
@@ -19,12 +19,12 @@
             <a href="index.html">
                 <img class="main__logo" src="./assets/images/logo.png" alt="Monsieur Gaston - Natural y Organico">
             </a>
-            <h1 class="main__title">Productos</h1>
+            <h1 class="main__title">Natural y Organico</h1>
         </div>
         <nav class="header__nav">
             <ul>
                 <li>
-                    <a class="nav__item " href="./index.html">Home</a>
+                    <a class="nav__item" href="./index.html">Home</a>
                 </li>
                 <li>
                     <a class="nav__item" href="./products.html">Productos</a>
@@ -43,77 +43,23 @@
             </form>
             <a href="./login.html"><button class="access__button--login">Login</button></a> 
             <a href="./login.html"><button class="access__button--register">Registrarse</button></a>
+            <button id="abrir-modal" class="text-white m-4 boton-icono-carrito"><img class="icono-carrito" src="./assets/images/carrito.svg" alt="carrito"> <span id="contador-carrito">0</span></button>
         </div>
     </header>
 
-    <main class="products">
-        <h3>Productos naturales</h2>
-        <p>Productos artesanales elaborados en Mendoza con los mejores ingredientes locales</p>
-       <section class="productos">
-           <article class="producto">
-               <div class="olivach-producto"></div>
-               <div class="text">
-                    <h3>Aceite de oliva</h3>
-                    <p>500cc. Extra virgen, primer prensado en frio</p>
-                    <p>$480.-</p>
-                    <button>Agregar al carrito</button>
+    <main class="container-fluid" id="main">
+        <div id="modal-container" class="modal-container container-fluid">
+            <div id="modal">
+               <h3 class="text-center mb-4">Carrito</h3><button id="cerrar-modal" class="cruz"><img src="./assets/images/cruz.svg" alt="cerrar"></button>
+               <div id="carrito">
+
                </div>
-           </article>
-
-           <article class="producto">
-            <div class="olivagr-producto"></div>
-            <div class="text">
-                 <h3>Aceite de oliva</h3>
-                 <p>3000cc. Extra virgen, primer prensado en frio</p>
-                 <p>$2600.-</p>
-                 <button>Agregar al carrito</button>
-            </div>
-            </article>
-
-            <article class="producto">
-                <div class="aceituna-producto"></div>
-                <div class="text">
-                     <h3>Aceitunas verdes rellenas</h3>
-                     <p>454g. Rellenas con morrones</p>
-                     <p>$340.-</p>
-                     <button>Agregar al carrito</button>
-                </div>
-            </article>
-            <article class="producto">
-                <div class="pasta-producto"></div>
-                <div class="text">
-                     <h3>Pasta de acitunas</h3>
-                     <p>454g. </p>
-                     <p>$340.-</p>
-                     <button>Agregar al carrito</button>
-                </div>
-            </article>
-       </section>
-       <br>
-        <h2>Productos organicos</h2>
-        <p>Los mejores ingredientes organicos utilizados para una elaboracion artesanal de produccion local</p>
-        <section class="productos">
-            <article class="producto">
-                <div class="panqueque-producto"></div>
-                <div class="text">
-                     <h3>Panqueques de trigo sarraceno</h3>
-                     <p>1kg </p>
-                     <p>$1100.-</p>
-                     <button>Agregar al carrito</button>
-                </div>
-            </article>
-
-            <article class="producto">
-                <div class="pate-producto"></div>
-                <div class="text">
-                     <h3>Pate de girasol</h3>
-                     <p>280g </p>
-                     <p>$340.-</p>
-                     <button>Agregar al carrito</button>
-                </div>
-            </article>
-        </section>
-    </main>    
+               <p id="precio-productos">Precio total: $<span id="precio-total">0</span></p>
+               <!-- <button id="cerrar-modal" class="p-2 bg-primary text-white">Cerrar</button> -->
+               <button id="vaciar-carrito" class="p-2 bg-primary text-white">Vaciar carrito</button>
+           </div>
+       </div>
+    </main>
     <footer class="footer">
         <div class="container">
             <h3>Contactenos</h3>
@@ -133,5 +79,12 @@
             <span><a href="https://web.facebook.com/monsieurgastonnaturalyorganico"><img src="./assets/images/facebook-icon.png"></a></span>
         </div>
     </footer>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="./js/main.js"></script>
+<script src="js/jquery.js"></script>
+
 </body>
 </html>

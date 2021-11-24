@@ -1,5 +1,85 @@
 @import "_variables.scss";
+#main{
+  display: flex;
+  flex-flow: row wrap;
+}
+.modal-container {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+  visibility: hidden;
+  opacity: 0;
+  transition: all .4s ease-in-out;
+}
+
+.cruz {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border-radius: 50%;
+  overflow: hidden;
+
+}
+
+#modal {
+  position: relative;
+  width: 600px;
+  height: auto;
+  max-height: 100vh;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  overflow: auto;
+
+}
+
+.modal-active {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.producto-carrito {
+  border-left: 5px solid lightblue;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+  margin: 5px 0;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+
+}
+.producto-carrito:hover {
+  border-left: 5px solid royalblue;
+}
+
+.eliminar {
+  padding: 5px;
+  background-color: crimson;
+  color:white;
+  border: 1px solid red;
+  border-radius: 11px;
+}
+
+.boton-eliminar{
+  background-color: white;
+  border: none;
+  width: 20px;
+  height: 30px;
+}
+
+.boton-eliminar img {
+  width: inherit;
+  height: inherit;
+}
 .main {
   display: flex;
   flex-direction: column;

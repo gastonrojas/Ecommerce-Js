@@ -74,6 +74,21 @@
       border: 1px solid $menta;
       border-radius: 3.5px;
     }
+    .icono-carrito {
+      width: 40px;
+      height: 40px;
+      filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(262deg) brightness(100%) contrast(101%);
+    }
+    .boton-icono-carrito{
+      background-color: $verdeoscuro;
+      border-radius: 15%;
+      border: none;
+        &:focus{
+          outline: 0px;
+          background-color: $verdeclaro;
+        }
+      
+    }
   }
 }
 

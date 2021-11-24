@@ -11,14 +11,14 @@ $padding: 0px 10px;
 $margin: 0px 3px;
 
 
-@each $comida in olivach, olivagr, panqueque, pasta, pate, aceituna {
-    .#{$comida}-producto {
-        background-image: url("../assets/images/#{$comida}.jpg");
-        width: 100%;
-        height: 30vh;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
+// @each $comida in olivach, olivagr, panqueque, pasta, pate, aceituna {
+//     .#{$comida}-producto {
+//         background-image: url("../assets/images/#{$comida}.jpg");
+//         width: 100%;
+//         height: 30vh;
+//         background-size: contain;
+//         background-repeat: no-repeat;
+//         background-position: center;
 
-    }
-}
+//     }
+// }

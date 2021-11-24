@@ -1,51 +1,3 @@
-.olivach-producto {
-  background-image: url("../assets/images/olivach.jpg");
-  width: 100%;
-  height: 30vh;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center; }
-
-.olivagr-producto {
-  background-image: url("../assets/images/olivagr.jpg");
-  width: 100%;
-  height: 30vh;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center; }
-
-.panqueque-producto {
-  background-image: url("../assets/images/panqueque.jpg");
-  width: 100%;
-  height: 30vh;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center; }
-
-.pasta-producto {
-  background-image: url("../assets/images/pasta.jpg");
-  width: 100%;
-  height: 30vh;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center; }
-
-.pate-producto {
-  background-image: url("../assets/images/pate.jpg");
-  width: 100%;
-  height: 30vh;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center; }
-
-.aceituna-producto {
-  background-image: url("../assets/images/aceituna.jpg");
-  width: 100%;
-  height: 30vh;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center; }
-
 html {
   font-size: 16px; }
 
@@ -57,53 +9,74 @@ body {
   font-family: 'Raleway', sans-serif;
   background-color: #DBE8D8; }
 
-.olivach-producto {
-  background-image: url("../assets/images/olivach.jpg");
-  width: 100%;
-  height: 30vh;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center; }
+#main {
+  display: flex;
+  flex-flow: row wrap; }
 
-.olivagr-producto {
-  background-image: url("../assets/images/olivagr.jpg");
+.modal-container {
   width: 100%;
-  height: 30vh;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center; }
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: all .4s ease-in-out; }
 
-.panqueque-producto {
-  background-image: url("../assets/images/panqueque.jpg");
-  width: 100%;
-  height: 30vh;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center; }
+.cruz {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border-radius: 50%;
+  overflow: hidden; }
 
-.pasta-producto {
-  background-image: url("../assets/images/pasta.jpg");
-  width: 100%;
-  height: 30vh;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center; }
+#modal {
+  position: relative;
+  width: 600px;
+  height: auto;
+  max-height: 100vh;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  overflow: auto; }
 
-.pate-producto {
-  background-image: url("../assets/images/pate.jpg");
-  width: 100%;
-  height: 30vh;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center; }
+.modal-active {
+  visibility: visible;
+  opacity: 1; }
 
-.aceituna-producto {
-  background-image: url("../assets/images/aceituna.jpg");
-  width: 100%;
-  height: 30vh;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center; }
+.producto-carrito {
+  border-left: 5px solid lightblue;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+  margin: 5px 0;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between; }
+
+.producto-carrito:hover {
+  border-left: 5px solid royalblue; }
+
+.eliminar {
+  padding: 5px;
+  background-color: crimson;
+  color: white;
+  border: 1px solid red;
+  border-radius: 11px; }
+
+.boton-eliminar {
+  background-color: white;
+  border: none;
+  width: 20px;
+  height: 30px; }
+
+.boton-eliminar img {
+  width: inherit;
+  height: inherit; }
 
 .main {
   display: flex;
@@ -255,54 +228,6 @@ body {
   .producto {
     max-width: 300px; } }
 
-.olivach-producto {
-  background-image: url("../assets/images/olivach.jpg");
-  width: 100%;
-  height: 30vh;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center; }
-
-.olivagr-producto {
-  background-image: url("../assets/images/olivagr.jpg");
-  width: 100%;
-  height: 30vh;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center; }
-
-.panqueque-producto {
-  background-image: url("../assets/images/panqueque.jpg");
-  width: 100%;
-  height: 30vh;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center; }
-
-.pasta-producto {
-  background-image: url("../assets/images/pasta.jpg");
-  width: 100%;
-  height: 30vh;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center; }
-
-.pate-producto {
-  background-image: url("../assets/images/pate.jpg");
-  width: 100%;
-  height: 30vh;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center; }
-
-.aceituna-producto {
-  background-image: url("../assets/images/aceituna.jpg");
-  width: 100%;
-  height: 30vh;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center; }
-
 .header {
   display: flex;
   flex-flow: column wrap;
@@ -357,6 +282,17 @@ body {
       color: #DBE8D8;
       border: 1px solid #DBE8D8;
       border-radius: 3.5px; }
+    .header .header__access .icono-carrito {
+      width: 40px;
+      height: 40px;
+      filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(262deg) brightness(100%) contrast(101%); }
+    .header .header__access .boton-icono-carrito {
+      background-color: #0A7029;
+      border-radius: 15%;
+      border: none; }
+      .header .header__access .boton-icono-carrito:focus {
+        outline: 0px;
+        background-color: #C8DF52; }
 
 @media screen and (min-width: 420px) {
   .header {
@@ -385,54 +321,6 @@ body {
     .header .header__access {
       position: absolute;
       right: 5px; } }
-
-.olivach-producto {
-  background-image: url("../assets/images/olivach.jpg");
-  width: 100%;
-  height: 30vh;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center; }
-
-.olivagr-producto {
-  background-image: url("../assets/images/olivagr.jpg");
-  width: 100%;
-  height: 30vh;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center; }
-
-.panqueque-producto {
-  background-image: url("../assets/images/panqueque.jpg");
-  width: 100%;
-  height: 30vh;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center; }
-
-.pasta-producto {
-  background-image: url("../assets/images/pasta.jpg");
-  width: 100%;
-  height: 30vh;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center; }
-
-.pate-producto {
-  background-image: url("../assets/images/pate.jpg");
-  width: 100%;
-  height: 30vh;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center; }
-
-.aceituna-producto {
-  background-image: url("../assets/images/aceituna.jpg");
-  width: 100%;
-  height: 30vh;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center; }
 
 .footer {
   background-color: #0A7029;
