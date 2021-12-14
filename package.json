@@ -14,7 +14,9 @@
     "node-sass": "^6.0.1",
     "nodemon": "^2.0.12"
   },
-  "dependencies": {},
+  "dependencies": {
+    "sweetalert2": "^11.3.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gastonrojas/monsieur-gaston.git"

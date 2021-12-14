@@ -7,8 +7,10 @@ const contenedorCarrito = document.getElementById('carrito')
 const precioTotal = document.getElementById('precio-total')
 const container = document.getElementById('main')
 const vaciarCarrito = document.getElementById('vaciar-carrito')
+const checkout = document.getElementById('checkout')
 
-let carrito = []
+let carrito = JSON.parse(localStorage.getItem('carrito')) || []
+let Logued = JSON.parse(localStorage.getItem('Logued')) || []
 
 const actualizarCarrito = () => {
   
@@ -34,27 +36,9 @@ const actualizarCarrito = () => {
         )
 
     })
-    
+    localStorage.setItem('carrito', JSON.stringify(carrito))
     contadorCarrito.innerText = carrito.reduce((acc, prod) => acc + prod.cantidad, 0)
     precioTotal.innerText = carrito.reduce((acc, prod) => acc + (prod.price * prod.cantidad), 0)
-    
-    
-}
-
-
-function setCache() {
-        localStorage.setItem('carrito', JSON.stringify(carrito))
-
-}
-function getCache() {
-    let r = localStorage.getItem('carrito')
-    return JSON.parse(r)
-
-}
-const inicializarCarrito = () => {
-        carrito = getCache() || []
-        contadorCarrito.innerText = carrito.reduce((acc, prod) => acc + prod.cantidad, 0)
-        actualizarCarrito()
 }
 
 
@@ -77,9 +61,32 @@ const Products = [
     {id: 16, name: 'Pate', desc: 'De Girasol', price: 400, img: './assets/images/pate.jpg'},  
 ]
 
-inicializarCarrito()
+actualizarCarrito()
 
 const activarModal = () => {modalContainer.classList.toggle('modal-active')}
+
+const finalizarCompra = () => {
+    if (Logued.length = 0) {
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Debe loguearse para concluir enviar el pedido!',
+        })
+    } else {
+        Swal.fire(
+            'El pedido se envio eitosamente!',
+            'En breve con comunicaremos con usted para coordinar la entrega y el metodo de pago!',
+            'success'
+          )
+          
+    carrito.length = 0
+    actualizarCarrito()
+    activarModal()
+    }
+}
+
+
+checkout.onclick = finalizarCompra
 
 modalAbrir.onclick = activarModal
 modalCerrar.onclick = activarModal
@@ -88,8 +95,7 @@ modalCarrito.addEventListener('click', (event) => {
     event.stopPropagation()
 } )
 
-/* <div class="card m-4" style="width: 18rem;"> */
-//  img card class="card-img-top" 
+
 Products.forEach((product) =>{
     $('#main').append(`
     
@@ -117,10 +123,8 @@ Products.forEach((product) =>{
 
 const agregarAlCarrito = (prodId) => {
 
-    // const item = Products.find( (prod) => prod.id === prodId)
-    // carrito.push(item)
     let prodEnCarrito = carrito.find(prod => prod.id == prodId)
-    console.log(prodEnCarrito)
+
     if (prodEnCarrito) {
         prodEnCarrito.cantidad += 1
     } else {
@@ -129,7 +133,6 @@ const agregarAlCarrito = (prodId) => {
     }
 
     actualizarCarrito()
-    setCache()
 }
 
 const eliminarDelCarrito = (prodId) => {
@@ -142,17 +145,7 @@ const eliminarDelCarrito = (prodId) => {
         carrito.splice(indice, 1)
     }
 
-    console.log(carrito)
-
-
-
-    // const item = carrito.find( (prod) => prod.id === prodId)
-    // const indice = carrito.indexOf(item)
-
-    // carrito.splice(indice, 1)
-
     actualizarCarrito()
-    setCache()
 }
 
 
@@ -160,8 +153,4 @@ vaciarCarrito.addEventListener ('click', () => {
 
     carrito.length = 0
     actualizarCarrito()
-    setCache()
 })
-
-
-

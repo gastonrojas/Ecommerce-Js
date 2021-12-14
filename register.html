@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Nustros cursos de alimentacion saludable">
-    <meta name="keywords" content="cursos, alimentacion, salud, bienestar">
+    <meta name="description" content="Logueo a Monsieur Gaston">
+    <meta name="keywords" content="login, monsieur, logeate">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Cursos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Registrarse</title>
 </head>
 <body>
     <header class="header">
@@ -19,7 +19,7 @@
             <a href="index.html">
                 <img class="main__logo" src="./assets/images/logo.png" alt="Monsieur Gaston - Natural y Organico">
             </a>
-            <h1 class="main__title">Cursos</h1>
+            <h1 class="main__title">Registrarse</h1>
         </div>
         <nav class="header__nav">
             <ul>
@@ -28,9 +28,6 @@
                 </li>
                 <li>
                     <a class="nav__item" href="./products.html">Productos</a>
-                </li>
-                <li>
-                    <a class="nav__item" href="./courses.html">Cursos</a>
                 </li>
                 <li>
                     <a class="nav__item" href="./about.html">Quienes somos</a>
@@ -42,43 +39,43 @@
                 <input class="access__searchbar" type="search" placeholder="Buscar...">
             </form>
             <a href="./login.html"><button class="access__button--login">Login</button></a> 
-            <a href="./login.html"><button class="access__button--register">Registrarse</button></a>
-            <button id="abrir-modal" class="text-white m-4 boton-icono-carrito"><img class="icono-carrito" src="./assets/images/carrito.svg" alt="carrito"> <span id="contador-carrito">0</span></button>
+            <a href="./register.html"><button class="access__button--register">Registrarse</button></a>
         </div>
     </header>
-    <main class="courses">
-        <h3>Proximamente...</h2>
-
-        <p>Ayudanos a saber que cursos sobre alimentacion saludable les gustaria realizar</p>
-
-        <form action="">
-            <label for="nombre" >Nombre</label>
-            <input type="text"name="nombre" placeholder="Ej: Juan">
+    
+    <main class="loger">
+        
+        <h2>Registrarse</h2>
+        <form id="registerForm" name="registration">
+            <label for="login">Nombre:</label>
+            <input id="name" type="text" name="name" placeholder="Ej: Elsa">
+            <label for="last">Apellido:</label>
+            <input id="last" type="text" name="last" placeholder="Patito">
+            <br><br>
+            <label for="user">Usuario:</label>
+            <input id="user" type="text" name="user" placeholder="Nobre de usuario">
+            <label for="pass">Contraseña:</label>
+            <input id="pass" type="password" name="pass" placeholder="*******">
+            <br><br>
+            <label for="tel">Telefono:</label>
+            <input id="tel" type="text" name="tel" placeholder="Con codigo de area">
+            <label for="mail">Mail:</label>
+            <input id="mail" type="text" name="mail" placeholder="mi.correo@mail.com">
+            <h4>Direccion:</h4>
+            <label for="street">Calle:</label>
+            <input id="street" type="text" name="street" placeholder="Calle">
+            <label for="number">Numero:</label>
+            <input id="number" type="text" name="number" placeholder="Altura">
+            <br><br>
+            <label for="floor">Piso:</label>
+            <input id="floor" type="text" name="floor" placeholder="5to">
+            <label for="apartment">Departamento:</label>
+            <input id="apartment" type="text" name="apartment" placeholder="H">
             <br>
-            <label for="apellido">Apellido</label>
-            <input type="text"name="apellido"placeholder="Perez">
-            <br>
-            <label for="e-mail">E-mail</label>
-            <input type="email"name="e-mail"placeholder="ejemplo@email.com">
-            <br>
-            <label for="estadocivil">Estado civil</label>
-            <select name="estadocivil">
-                <option value="Soltero">Soltero/a</option>
-                <option value="Casado">Casado/a</option>
-                <option value="viudo">Viudo/a</option>
-            </select>
-            <br>
-            <label for="novedades">Deseo recibir novedades y descuentos</label>
-            <input type="checkbox"name="novedades" value="enviar">
-            <br>
-            <p>Escriba aqui su comentario</p>
-            <textarea cols="30" rows="10"></textarea>
-            <br>
-            <input type="submit" value="Enviar comentario">
-            <input type="reset" value="Borrar">
-            </form>
-            
+            <input id="register" type="submit" value="Registrarse">
+        </form>
     </main>
+    
     <footer class="footer">
         <div class="container">
             <h3>Contactenos</h3>
@@ -86,10 +83,10 @@
             <p>grojas89@hotmail.com</p>
             <p>Palermo, CABA</p>
         </div>
-        
+            
         <div class="container">
             <h3>Envios</h3>
-            <p>Envios a CABA y GBA</p><p>Gratis en pedidos mayores a $2000.-</p><p>Consulte por envios al interior</p>
+            <p>Envios a CABA y GBA<br>Gratis en pedidos mayores a $2000.-<br> Consulte por envios al interior</p>
         </div>
             
         <div class="container">
@@ -98,5 +95,9 @@
             <span><a href="https://web.facebook.com/monsieurgastonnaturalyorganico"><img src="./assets/images/facebook-icon.png"></a></span>
         </div>
     </footer>
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="./js/register.js"></script>
+
 </body>
 </html>

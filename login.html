@@ -30,9 +30,6 @@
                     <a class="nav__item" href="./products.html">Productos</a>
                 </li>
                 <li>
-                    <a class="nav__item" href="./courses.html">Cursos</a>
-                </li>
-                <li>
                     <a class="nav__item" href="./about.html">Quienes somos</a>
                 </li>
             </ul>
@@ -42,8 +39,7 @@
                 <input class="access__searchbar" type="search" placeholder="Buscar...">
             </form>
             <a href="./login.html"><button class="access__button--login">Login</button></a> 
-            <a href="./login.html"><button class="access__button--register">Registrarse</button></a>
-            <button id="abrir-modal" class="text-white m-4 boton-icono-carrito"><img class="icono-carrito" src="./assets/images/carrito.svg" alt="carrito"> <span id="contador-carrito">0</span></button>
+            <a href="./register.html"><button class="access__button--register">Registrarse</button></a>
         </div>
     </header>
     
@@ -52,13 +48,13 @@
         <form>
             <label for="login">Usuario:</label>
             <br>
-            <input type="text" name="login" placeholder="Nobre de usuario">
+            <input id="userLog" type="text" name="login" placeholder="Nobre de usuario">
             <br><br>
             <label for="pass">Contraseña</label>
             <br>
-            <input type="password" name="pass" placeholder="*******">
+            <input id="password" type="password" name="pass" placeholder="*******">
             <br><br>
-            <a href="./error404.html"><input type="button" value="Ingresar"></a>
+            <input id="logButton" type="submit" value="Ingresar">
         </form>
     </main>
     
@@ -81,5 +77,8 @@
             <span><a href="https://web.facebook.com/monsieurgastonnaturalyorganico"><img src="./assets/images/facebook-icon.png"></a></span>
         </div>
     </footer>
+    
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="./js/log.js"></script>
 </body>
 </html>

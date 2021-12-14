@@ -181,7 +181,7 @@ body {
   text-align: center;
   margin: 30px 10px 80px 10px; }
   .loger h2 {
-    font-size: 1.2em; }
+    margin-bottom: 15px;}
 
 .about {
   margin: 20px;
@@ -220,7 +220,9 @@ body {
     gap: 10px;
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: 15px 4fr 3fr;
-    grid-template-areas: ". hero ." ". hero info" ". orders promo"; }
+    grid-template-areas: ". hero ."
+ ". hero info"
+ ". orders promo"; }
   .producto {
     max-width: 170px; } }
 
